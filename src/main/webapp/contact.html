@@ -1,0 +1,193 @@
+<!DOCTYPE html">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	
+		<title>Моја презентација</title>
+		<link href="main.css" rel="stylesheet" type="text/css" />
+		
+		<script type='text/javascript' src='js/pictures_map.js'></script>
+		<script type='text/javascript' src='js/day_week.js'></script>
+		<script type='text/javascript' src='js/tic_tac_toe.js'></script>
+		
+		<script>
+			function tic_tac_toe_flip_flop(){
+				var doc = document.getElementById('tic_tac_toe_place'); 
+				if(doc.style.display==='none') doc.style.display = 'block'; 
+				else doc.style.display = 'none';
+			}
+			function day_week_flip_flop(){
+				var doc = document.getElementById('day_week_place'); 
+				if(doc.style.display==='none') doc.style.display = 'block'; 
+				else doc.style.display = 'none';
+			}
+			function slikovnica_flip_flop(){
+				var doc = document.getElementById('slikovnica_place'); 
+				if(doc.style.display==='none') doc.style.display = 'block'; 
+				else doc.style.display = 'none';
+			}
+		</script>
+		<style>
+			.tic_tac_toe_zone{
+			    font-size: 48;
+				font-family: Courier New; 
+				border-collapse: collapse; 
+			}
+			
+			#tttz_1{
+				border-right: 1px solid black; 
+				border-bottom: 1px solid black; 
+			}
+			
+			#tttz_2{
+				border-right: 1px solid black; 
+				border-bottom: 1px solid black; 
+			}
+			
+			#tttz_3{
+				border-bottom: 1px solid black; 
+			}
+			
+			#tttz_4{
+				border-right: 1px solid black; 
+				border-bottom: 1px solid black; 
+			}
+			
+			#tttz_5{
+				border-right: 1px solid black; 
+				border-bottom: 1px solid black; 
+			}
+			
+			#tttz_6{
+				border-bottom: 1px solid black; 
+			}
+			
+			#tttz_7{
+				border-right: 1px solid black; 
+			}
+			
+			#tttz_8{
+				border-right: 1px solid black; 
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div id="top">
+			<h1>Мирко Видаковић</h1>
+		</div>
+		<div id="menu">
+			<a href="index.html">Начелна страница</a> | <a href="aboutme.html">О
+				мени</a> | <a href="favoritemovie.html">Омиљени филм</a> | <a
+				href="contact.html">Контакт</a> | <a href="greece.html">Грчка</a>
+		</div>
+		<div id="main">
+			<h2>Контакти</h2><br>
+			<div style='display:flex; flex-grow:1; flex-direction:row; flex-wrap:wrap;'>
+				<div style='padding: 10px 10px 10px 10px; display:flex; flex-grow:1; flex-direction:column; flex-wrap:wrap;'>
+					<dl>
+						<dt>Електронска пошта</dt>
+						<dd style='padding: 0px 10px'><a href='mailto:mirko.vidakovic@student.etf.unibl.org'>Student Email</a></dd>
+						<dd style='padding: 0px 10px'><a href='mailto:mirko.vidakovic.2020.001@outlook.com'>Outlook Email</a></dd>
+						<dd style='padding: 0px 10px'><a href='mailto:mirko.vidakovic.2020.002@gmail.com'>Google Email</a></dd>
+						<dd style='padding: 0px 10px'><a href='mailto:mirko.vidakovic.2020.003@outlook.com'>Windows Email</a></dd>
+						<dd style='padding: 0px 10px'><a href='mailto:mirko.vidakovic.2021@outlook.com'>Official Email</a></dd>
+					</dl>
+				</div>
+				<div style='padding: 10px 10px 10px 10px; display:flex; flex-grow:1; flex-direction:column; flex-wrap:wrap;'>
+					<dl>
+						<dt>Друштвене мреже</dt>
+						<dd style='padding: 0px 10px'><a target='_blank' href='https://www.linkedin.com/in/mirko-vidakovic-98aa571b3/'>Linked In Account</a></dd>
+						<dd style='padding: 0px 10px'><a target='_blank' href='https://github.com/mirko2021'>GitHub Account (XXVII,2021)</a></dd>
+						<dd style='padding: 0px 10px'><a target='_blank' href='https://vk.com/vidmir93'>VKontakte Account</a></dd>
+						<dd style='padding: 0px 10px'><a target='_blank' href='https://www.facebook.com/people/%D0%9C%D0%B8%D1%80%D0%BA%D0%BE-%D0%92%D0%B8%D0%B4%D0%B0%D0%BA%D0%BE%D0%B2%D0%B8%D1%9B/100065745964146/'>Facebook Account</a></dd>
+						<dd style='padding: 0px 10px'><a href='sms:+38766910232&body=Poruka sa prezentacije'>Viber/Telephone Account (066/910-232)</a></dd>
+					</dl>
+				</div>
+			</div>
+			<br><br>
+			<h2>Апликације</h2><br>
+			<div>
+				&nbsp; 
+				<span style='color:blue; cursor:pointer;' onclick='tic_tac_toe_flip_flop()'>ИКС ОКС</span><span style='color:blue'>&nbsp; | &nbsp;</span>
+				<span style='color:blue; cursor:pointer;' onclick='day_week_flip_flop()'>ДАНАШЊИ ДАН</span><span style='color:blue'>&nbsp; | &nbsp;</span>
+				<span style='color:blue; cursor:pointer;' onclick='slikovnica_flip_flop()'>СЛИКОВНИЦА</span>
+				<div id='tic_tac_toe_place' style='display:none'>
+					<table>
+						<tr>
+							<td valign='top'>
+								<img width='500' height='300' src="home/1137937270_0 0 1600 900_600x0_80_0_0_f8af968ef80645c6048408734e526554.jpg">
+							</td>
+							<td valign='top'>
+								<table class='tic_tac_toe_zone'>
+									<tr class='tic_tac_toe_zone'>
+										<td class='tic_tac_toe_zone' id='tttz_1' onclick='ttt_tick_1()'>&nbsp;</td>
+										<td class='tic_tac_toe_zone' id='tttz_2' onclick='ttt_tick_2()'>&nbsp;</td>
+										<td class='tic_tac_toe_zone' id='tttz_3' onclick='ttt_tick_3()'>&nbsp;</td>
+									</tr>
+									<tr class='tic_tac_toe_zone'>
+										<td class='tic_tac_toe_zone' id='tttz_4' onclick='ttt_tick_4()'>&nbsp;</td>
+										<td class='tic_tac_toe_zone' id='tttz_5' onclick='ttt_tick_5()'>&nbsp;</td>
+										<td class='tic_tac_toe_zone' id='tttz_6' onclick='ttt_tick_6()'>&nbsp;</td>
+									</tr>
+									<tr class='tic_tac_toe_zone'>
+										<td class='tic_tac_toe_zone' id='tttz_7' onclick='ttt_tick_7()'>&nbsp;</td>
+										<td class='tic_tac_toe_zone' id='tttz_8' onclick='ttt_tick_8()'>&nbsp;</td>
+										<td class='tic_tac_toe_zone' id='tttz_9' onclick='ttt_tick_9()'>&nbsp;</td>
+									</tr>
+								</table>
+							</td>
+							<td valign='top'>&nbsp;&nbsp;&nbsp;</td>
+							<td valign='top'>
+								<form method='POST'>
+									<input type='button' value='Освјежавање игре' onclick='ttt_game_reset()'/>
+									<select name='ttt_gammer' id='ttt_gammer'>
+										<option value='X' selected>X</option>
+										<option value='O'>O</option>
+									</select>
+								</form>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div id='day_week_place' style='display:none'>
+				<table>
+					<tr>
+						<td valign='top'>
+							<img width='500' height='300' src="home/210750391_149922683875930_2296857337779501804_n.jpg">
+						</td>
+						<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td valign='top'>
+							<form method='POST'>
+								<input type='date' id='dw_input' onchange='dw_change()'/>
+								<br><br><div id='dw_record'></div>
+								<script>document.getElementById('dw_input').value=dw_today(); dw_change();</script>
+							</form>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div id='slikovnica_place' style='display:none'>
+				<table>
+					<tr>
+						<td valign='top'>
+							<img width='500' height='300' src="knez/3.jpg" usemap='#pm_map' id='pm_image'>
+							<map name="pm_map">
+							  <area shape="rect" coords="0,0,100,300"   alt="Nazad"    href="javascript:pm_previous()">
+							  <area shape="rect" coords="400,0,500,300" alt="Naprijed" href="javascript:pm_next()">
+							</map>
+						</td>
+						<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td valign='top'>
+							Кнежево. 
+						</td>
+					</tr>
+				</table>
+			</div>
+			<br>
+			
+			<div id="footer">Copyright VM | All Rights Reserved</div>
+		</div>
+	</body>
+</html>
